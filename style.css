@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+
+box-sizing: border-box;
+font-family: Arial;
+}
+* a{
+    text-decoration: none;
+}
+* li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bg::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url('https://cdn.futura-sciences.com/sources/pH-solution-acide-base.jpg');
+    z-index: -4;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+.menu {
+    position: relative;
+    width: 90%;
+    height: 12vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo a{
+    font-size: 3rem;
+    color: #fff;
+
+}
+.menu ul{
+    display: flex;
+ }
+ .menu ul li{
+    padding: 0 25px;
+ }
+.menu ul li a{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 40px;
+ }
+ .content{
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+ }
+ .content .header ,.grid-card{
+    width: 50%;
+ }
+ .content .header {
+    padding: 35px;
+ }
+.content .header p{
+    color: #fff;
+    line-height: 1.6rem;
+    opacity: .6;
+}
+.content .header h1{
+    font-size: 3rem;
+    color: #77faff;
+    letter-spacing: 1.5px;
+}
+.content .header h2{
+    font-size: 5.5rem;
+    color: #fff;
+}
+.content .header h3{
+    font-size: 4.5rem;
+    color: #fff;
+    margin: 15pt 0;
+    
+}
+.content img{
+    margin: 30pt 0;
+}
+.grid-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
+.grid-card .box{
+    width: 90%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    transition: .4s;
+    position: relative;
+}
+.bg1{
+    background-image:url('https://i.ebayimg.com/images/g/9rYAAOSw2rplGx2K/s-l1600.jpg');
+}
+.bg2{
+    background-image:url('https://img.freepik.com/premium-photo/lemon-banner-design-with-copy-space-lemon-white-background-lemon-leaves-whole-lemons_965119-53401.jpg');
+}
+.bg3{
+    background-image:url('https://assets.fishersci.com/TFS-Assets/CCG/product-images/12723506_A.JPG-650.jpg');
+}
+.bg4{
+    background-image:url('https://www.chonklang.com/webcms/uploads/Article/Salt/rock_salt.jpg?1562499733342');
+}
+.content .box h2{
+    position: absolute;
+    bottom: 7px;
+    left: 15px;
+    color: #1b273a;
+}
+.content .box:hover{
+    transform: translateY(-15px);
+}
+
+.text-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 2rem;
+}
+.content-1{
+    margin: 2rem;
+}
+.text-item img{
+    width: 100%;
+}
+.text-item h4{
+    margin-top: lrem;
+    font-size: 2rem;
+    color: #fff;
+    align-items: center;
+    margin: 15pt 0;
+    
+}
+.text-item p{
+    margin: 1rem 0;
+    color: #fff;
+    font-size: larger;
+}
+.text-item a{
+    display: inline-block;
+}
+.end{
+    background-color: black;
+}
